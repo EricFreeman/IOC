@@ -1,0 +1,10 @@
+A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\UnitTests\bin\Debug\UnitTests.dll.config
+A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\UnitTests\bin\Debug\UnitTests.dll
+A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\UnitTests\bin\Debug\UnitTests.pdb
+A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\UnitTests\bin\Debug\IocContainer.dll
+A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\UnitTests\bin\Debug\nunit.framework.dll
+A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\UnitTests\bin\Debug\IocContainer.pdb
+A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\UnitTests\bin\Debug\nunit.framework.xml
+A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\UnitTests\obj\Debug\UnitTests.dll
+A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\UnitTests\obj\Debug\UnitTests.pdb

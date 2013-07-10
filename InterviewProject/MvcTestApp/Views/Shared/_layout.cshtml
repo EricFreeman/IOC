@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>My Test Blog - @ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="@Url.Content("/Content/style.css")">
+</head>
+<body>
+    <div class="TitleBar">
+        <div class="Title">MY BLOG</div>
+        <div class="Links">
+            <ul>
+                <li class="LinkItem">@Html.ActionLink("Blog", "GetAllPosts")</li>
+                <li class="LinkItem">@Html.ActionLink("About", "About")</li>
+                <li class="LinkItem">(nothing)</li>
+                <li class="LinkItem">(nothing)</li>
+                <li class="LinkItem">(nothing)</li>
+            </ul>
+        </div>
+    </div>
+    @RenderBody()
+</body>
+</html>

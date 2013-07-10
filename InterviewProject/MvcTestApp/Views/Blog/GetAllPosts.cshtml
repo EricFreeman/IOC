@@ -1,0 +1,19 @@
+﻿@model List<MvcTestApp.Models.Post>
+
+@{
+    ViewBag.Title = "Get All Posts";
+}
+
+@foreach (var post in Model)
+{
+    <div class="Post">
+    <div class ="PostTitle">
+        <h1>@post.DatePosted.ToShortDateString() - @post.Title</h1>
+    </div>
+    <div class="PostText">
+        @post.Text
+        <br /><br />
+        <a href="@Url.Content("/Blog/GetPost/" + post.id)">View More</a>
+    </div>
+</div>
+}

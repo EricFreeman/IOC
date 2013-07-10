@@ -1,0 +1,33 @@
+﻿@model MvcTestApp.Models.Post
+
+@{
+    ViewBag.Title = "Get Post";
+}
+
+<div class="Post">
+    <div class ="PostTitle">
+        <h1>@Model.DatePosted.ToShortDateString() - @Model.Title</h1>
+    </div>
+    <div class="PostText">
+        @Model.Text
+        <br /><br />
+        <a href="@Url.Content("/Blog/GetAllPosts/")"><- Go Back</a>
+    </div>
+</div>
+
+<div class="Post">
+    <div class ="PostTitle">
+        <h1>Comments</h1>
+    </div>
+    <div class="PostText">
+        <div class="Comment">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim interdum erat vel dictum. Pellentesque sed tincidunt libero, vitae tincidunt nisl. Vestibulum mattis eu felis vitae feugiat. Aenean sed eros eget elit facilisis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Sed vitae auctor ipsum. Pellentesque ac malesuada nisi. Etiam tincidunt, nunc sit amet ornare lobortis, risus lectus rutrum nisl, sed pretium risus tortor non urna. Vestibulum dapibus ac nibh non aliquet. Nullam non condimentum leo, sed viverra mauris. Phasellus pulvinar erat tortor, posuere semper nulla lobortis a. Integer sollicitudin fringilla risus, in malesuada justo gravida non.
+        </div>
+        <div class="Comment">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim interdum erat vel dictum. Pellentesque sed tincidunt libero, vitae tincidunt nisl. Vestibulum mattis eu felis vitae feugiat. Aenean sed eros eget elit facilisis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Sed vitae auctor ipsum. Pellentesque ac malesuada nisi. Etiam tincidunt, nunc sit amet ornare lobortis, risus lectus rutrum nisl, sed pretium risus tortor non urna. Vestibulum dapibus ac nibh non aliquet. Nullam non condimentum leo, sed viverra mauris. Phasellus pulvinar erat tortor, posuere semper nulla lobortis a. Integer sollicitudin fringilla risus, in malesuada justo gravida non. Cras vel magna vestibulum nulla placerat ornare. Pellentesque pellentesque felis vitae erat scelerisque, vel semper dolor vulputate. Praesent ac mauris congue, tincidunt leo at, ultrices quam. 
+        </div>
+        <div class="Comment">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim interdum erat vel dictum. Pellentesque sed tincidunt libero, vitae tincidunt nisl. Vestibulum mattis eu felis vitae feugiat. Aenean sed eros eget elit facilisis interdum. Lorem ipsum dolor sit amet
+        </div>
+    </div>
+</div>
