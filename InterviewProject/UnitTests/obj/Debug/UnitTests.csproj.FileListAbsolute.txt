@@ -8,3 +8,12 @@ A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\UnitTests\bin\Deb
 A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
 A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\UnitTests\obj\Debug\UnitTests.dll
 A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\UnitTests\obj\Debug\UnitTests.pdb
+C:\home\play\IOC\InterviewProject\UnitTests\bin\Debug\UnitTests.dll.config
+C:\home\play\IOC\InterviewProject\UnitTests\bin\Debug\UnitTests.dll
+C:\home\play\IOC\InterviewProject\UnitTests\bin\Debug\UnitTests.pdb
+C:\home\play\IOC\InterviewProject\UnitTests\bin\Debug\IocContainer.dll
+C:\home\play\IOC\InterviewProject\UnitTests\bin\Debug\IocContainer.pdb
+C:\home\play\IOC\InterviewProject\UnitTests\bin\Debug\nunit.framework.xml
+C:\home\play\IOC\InterviewProject\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\home\play\IOC\InterviewProject\UnitTests\obj\Debug\UnitTests.dll
+C:\home\play\IOC\InterviewProject\UnitTests\obj\Debug\UnitTests.pdb

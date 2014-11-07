@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using System.Web;
@@ -31,7 +29,7 @@ namespace MvcTestApp
                 {
                     ParameterInfo p = parametersInfo[i];
 
-                    parameters[i] = IocContainer.IocContainer.Resolve(p.ParameterType);
+                    parameters[i] = IocContainer.Ioc.Resolve(p.ParameterType);
                 }
             }
 

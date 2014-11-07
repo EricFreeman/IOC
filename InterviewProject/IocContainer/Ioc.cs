@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace IocContainer
 {
-    public static class IocContainer
+    public static class Ioc
     {
         #region Properties
 
@@ -34,26 +34,28 @@ namespace IocContainer
         {
             if (objectDictionary.ContainsKey(fromType))
                 return GetImplementationFromComponent(objectDictionary[fromType]);
-            else
-                throw new Exception(string.Format("Cannot find implementation for {0}!", fromType.Name));
+            
+            throw new Exception(string.Format("Cannot find implementation for {0}!", fromType.Name));
+        }
+
+        public static T Resolve<T>()
+        {
+            return (T)Resolve(typeof (T));
         }
 
         private static object GetImplementationFromComponent(Component component)
         {
             if (component.ImplementationLifestyle == LifeStyleType.Singleton)
             {
-                if (component.ImplementationInstance == null)
-                    component.ImplementationInstance = CreateObject(component);
-                
-                return component.ImplementationInstance;
+                return component.ImplementationInstance ?? (component.ImplementationInstance = CreateObject(component));
             }
-            else
-                return CreateObject(component);
+
+            return CreateObject(component);
         }
 
         private static object CreateObject(Component component)
         {
-            List<object> paramsValues = new List<object>();
+            var paramsValues = new List<object>();
             foreach (var construct in component.ImplementationType.GetConstructors())
             {
                 foreach (ParameterInfo param in construct.GetParameters())
@@ -61,14 +63,14 @@ namespace IocContainer
                     Type paramType = param.ParameterType;
                     if (paramType.IsInterface)
                     {
-                        paramsValues.Add(IocContainer.Resolve(paramType));
+                        paramsValues.Add(Ioc.Resolve(paramType));
                     }
                 }
 
                 if (paramsValues.Count() == construct.GetParameters().Count())
                     break;
-                else
-                    paramsValues.Clear();
+
+                paramsValues.Clear();
             }
             return Activator.CreateInstance(component.ImplementationType, paramsValues.ToArray());
         }

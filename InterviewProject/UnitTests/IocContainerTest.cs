@@ -1,9 +1,4 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using IocContainer;
 
 namespace UnitTests
@@ -14,11 +9,11 @@ namespace UnitTests
         [Test]
         public void TestSingleton()
         {
-            IocContainer.IocContainer.ClearRegistry();
-            IocContainer.IocContainer.Register<ITeacher, Teacher>(LifeStyleType.Singleton);
-            IocContainer.IocContainer.Register<IClassroom, Classroom>();
-            Teacher t1 = (Teacher)IocContainer.IocContainer.Resolve(typeof(ITeacher));
-            Teacher t2 = (Teacher)IocContainer.IocContainer.Resolve(typeof(ITeacher));
+            Ioc.ClearRegistry();
+            Ioc.Register<ITeacher, Teacher>(LifeStyleType.Singleton);
+            Ioc.Register<IClassroom, Classroom>();
+            var t1 = Ioc.Resolve<ITeacher>();
+            var t2 = Ioc.Resolve<ITeacher>();
             t1.name = "Billy";
             Assert.AreEqual(t1.name, t2.name);
         }
@@ -26,31 +21,31 @@ namespace UnitTests
         [Test]
         public void TestRegister()
         {
-            IocContainer.IocContainer.ClearRegistry();
-            IocContainer.IocContainer.Register<ITeacher, Teacher>();
-            IocContainer.IocContainer.Register<IClassroom, Classroom>();
-            var t = IocContainer.IocContainer.Resolve(typeof(ITeacher));
+            Ioc.ClearRegistry();
+            Ioc.Register<ITeacher, Teacher>();
+            Ioc.Register<IClassroom, Classroom>();
+            var t = Ioc.Resolve<ITeacher>();
             Assert.IsInstanceOf<Teacher>(t);
         }
 
         [Test]
         public void TestDependencyInjection()
         {
-            IocContainer.IocContainer.ClearRegistry();
-            IocContainer.IocContainer.Register<ITeacher, Teacher>();
-            IocContainer.IocContainer.Register<IClassroom, Classroom>();
-            var t = IocContainer.IocContainer.Resolve(typeof(ITeacher));
+            Ioc.ClearRegistry();
+            Ioc.Register<ITeacher, Teacher>();
+            Ioc.Register<IClassroom, Classroom>();
+            var t = Ioc.Resolve<ITeacher>();
             Assert.IsNotNull(((Teacher)t).classroom);
         }
 
         [Test]
         public void TestTransient()
         {
-            IocContainer.IocContainer.ClearRegistry();
-            IocContainer.IocContainer.Register<ITeacher, Teacher>();
-            IocContainer.IocContainer.Register<IClassroom, Classroom>();
-            Teacher t1 = (Teacher)IocContainer.IocContainer.Resolve(typeof(ITeacher));
-            Teacher t2 = (Teacher)IocContainer.IocContainer.Resolve(typeof(ITeacher));
+            Ioc.ClearRegistry();
+            Ioc.Register<ITeacher, Teacher>();
+            Ioc.Register<IClassroom, Classroom>();
+            var t1 = Ioc.Resolve<ITeacher>();
+            var t2 = Ioc.Resolve<ITeacher>();
             t1.classroom.name = "Room 200";
             t2.classroom.name = "Room 300";
             Assert.AreNotEqual(((Teacher)t1).classroom.name, ((Teacher)t2).classroom.name);

@@ -22,7 +22,7 @@ namespace MvcTestApp
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
-            IocContainer.IocContainer.Register<IDal, Dal>(LifeStyleType.Singleton);
+            IocContainer.Ioc.Register<IDal, Dal>(LifeStyleType.Singleton);
             ControllerBuilder.Current.SetControllerFactory(new IocControllerFactory());
         }
     }

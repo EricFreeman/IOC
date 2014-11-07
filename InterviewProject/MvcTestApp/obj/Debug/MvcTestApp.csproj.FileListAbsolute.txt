@@ -26,3 +26,32 @@ A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\MvcTestApp\bin\Sy
 A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\MvcTestApp\obj\Debug\MvcTestApp.csprojResolveAssemblyReference.cache
 A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\MvcTestApp\obj\Debug\MvcTestApp.dll
 A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\MvcTestApp\obj\Debug\MvcTestApp.pdb
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\MvcTestApp.dll.config
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\MvcTestApp.dll
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\MvcTestApp.pdb
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\IocContainer.dll
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\Microsoft.Web.Infrastructure.dll
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\Newtonsoft.Json.dll
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Net.Http.Formatting.dll
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Web.Helpers.dll
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Web.Http.dll
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Web.Http.WebHost.dll
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Web.Mvc.dll
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Web.Razor.dll
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Web.WebPages.Deployment.dll
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Web.WebPages.dll
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Web.WebPages.Razor.dll
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\IocContainer.pdb
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\Newtonsoft.Json.xml
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Net.Http.Formatting.xml
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Web.Helpers.xml
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Web.Http.xml
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Web.Http.WebHost.xml
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Web.Mvc.xml
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Web.Razor.xml
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Web.WebPages.xml
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Web.WebPages.Deployment.xml
+C:\home\play\IOC\InterviewProject\MvcTestApp\bin\System.Web.WebPages.Razor.xml
+C:\home\play\IOC\InterviewProject\MvcTestApp\obj\Debug\MvcTestApp.csprojResolveAssemblyReference.cache
+C:\home\play\IOC\InterviewProject\MvcTestApp\obj\Debug\MvcTestApp.dll
+C:\home\play\IOC\InterviewProject\MvcTestApp\obj\Debug\MvcTestApp.pdb

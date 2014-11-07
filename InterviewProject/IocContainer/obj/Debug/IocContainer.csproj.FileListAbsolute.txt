@@ -4,3 +4,9 @@ A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\IocContainer\obj\
 A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\IocContainer\obj\Debug\IocContainer.pdb
 A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\IocContainer\obj\Debug\IocContainer.csprojResolveAssemblyReference.cache
 A:\Users\Eric\Documents\Visual Studio 2012\Projects\MvcTestApp\IocContainer\bin\Debug\IocContainer.dll.config
+C:\home\play\IOC\InterviewProject\IocContainer\bin\Debug\IocContainer.dll.config
+C:\home\play\IOC\InterviewProject\IocContainer\bin\Debug\IocContainer.dll
+C:\home\play\IOC\InterviewProject\IocContainer\bin\Debug\IocContainer.pdb
+C:\home\play\IOC\InterviewProject\IocContainer\obj\Debug\IocContainer.csprojResolveAssemblyReference.cache
+C:\home\play\IOC\InterviewProject\IocContainer\obj\Debug\IocContainer.dll
+C:\home\play\IOC\InterviewProject\IocContainer\obj\Debug\IocContainer.pdb

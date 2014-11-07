@@ -46,7 +46,7 @@
   <ItemGroup>
     <Compile Include="Component.cs" />
     <Compile Include="Enums.cs" />
-    <Compile Include="IocContainer.cs" />
+    <Compile Include="Ioc.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
