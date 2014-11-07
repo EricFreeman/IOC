@@ -2,8 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace IocContainer
 {
@@ -30,6 +28,11 @@ namespace IocContainer
 
         #region Resolve
 
+        public static T CreateModel<T>()
+        {
+            return (T)CreateObject(typeof (T));
+        }
+
         public static object Resolve(Type fromType)
         {
             if (objectDictionary.ContainsKey(fromType))
@@ -47,24 +50,21 @@ namespace IocContainer
         {
             if (component.ImplementationLifestyle == LifeStyleType.Singleton)
             {
-                return component.ImplementationInstance ?? (component.ImplementationInstance = CreateObject(component));
+                return component.ImplementationInstance ?? (component.ImplementationInstance = CreateObject(component.ImplementationType));
             }
 
-            return CreateObject(component);
+            return CreateObject(component.ImplementationType);
         }
 
-        private static object CreateObject(Component component)
+        private static object CreateObject(Type implementationType)
         {
             var paramsValues = new List<object>();
-            foreach (var construct in component.ImplementationType.GetConstructors())
+            foreach (var construct in implementationType.GetConstructors())
             {
                 foreach (ParameterInfo param in construct.GetParameters())
                 {
-                    Type paramType = param.ParameterType;
-                    if (paramType.IsInterface)
-                    {
-                        paramsValues.Add(Ioc.Resolve(paramType));
-                    }
+                    var paramType = param.ParameterType;
+                    if (paramType.IsInterface) paramsValues.Add(Resolve(paramType));
                 }
 
                 if (paramsValues.Count() == construct.GetParameters().Count())
@@ -72,7 +72,7 @@ namespace IocContainer
 
                 paramsValues.Clear();
             }
-            return Activator.CreateInstance(component.ImplementationType, paramsValues.ToArray());
+            return Activator.CreateInstance(implementationType, paramsValues.ToArray());
         }
 
         #endregion
