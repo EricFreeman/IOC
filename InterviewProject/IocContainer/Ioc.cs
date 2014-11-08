@@ -33,6 +33,11 @@ namespace IocContainer
             return (T)CreateObject(typeof (T));
         }
 
+        public static object CreateModel(Type fromType)
+        {
+            return CreateObject(fromType);
+        }
+
         public static object Resolve(Type fromType)
         {
             if (objectDictionary.ContainsKey(fromType))
